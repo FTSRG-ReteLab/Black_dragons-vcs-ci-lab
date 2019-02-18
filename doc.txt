@@ -1,0 +1,1 @@
+A Readme.md fájlban készítettünk egy Additional notes című alpontot, hozzáadtunk egy linket, valamint egy listát.
