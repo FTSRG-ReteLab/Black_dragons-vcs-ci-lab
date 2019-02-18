@@ -50,5 +50,5 @@ The figure below illustrates this behavior using an example.
 ## Additional notes
 
 We can create [links](https://google.com).
-* and
+* headers
 * lists
