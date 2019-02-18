@@ -9,7 +9,7 @@ public class TrainSensorTest {
 
     @Before
     public void before() {
-        // TODO Add initializations
+
     }
 
     @Test

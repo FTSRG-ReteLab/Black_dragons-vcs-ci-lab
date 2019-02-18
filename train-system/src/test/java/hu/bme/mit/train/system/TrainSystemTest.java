@@ -9,6 +9,8 @@ import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.TrainSystem;
 
+import java.security.InvalidParameterException;
+
 public class TrainSystemTest {
 
 	TrainController controller;
@@ -48,6 +50,11 @@ public class TrainSystemTest {
 		user.overrideJoystickPosition(-5);
 		controller.followSpeed();
 		Assert.assertEquals(0, controller.getReferenceSpeed());
+	}
+
+	@Test(expected = InvalidParameterException.class)
+	public void OverridingSpeedLimit_NegativeSpeed() {
+		sensor.overrideSpeedLimit(-5);
 	}
 
 	
