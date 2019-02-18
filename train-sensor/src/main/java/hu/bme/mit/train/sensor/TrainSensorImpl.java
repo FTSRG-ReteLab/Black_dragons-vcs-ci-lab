@@ -14,7 +14,7 @@ public class TrainSensorImpl implements TrainSensor {
 		this.controller = controller;
 		this.user = user;
 	}
-
+	
 	@Override
 	public int getSpeedLimit() {
 		return speedLimit;
@@ -22,6 +22,7 @@ public class TrainSensorImpl implements TrainSensor {
 
 	@Override
 	public void overrideSpeedLimit(int speedLimit) {
+		if(speedLimit < 0) throw new InvalidParameterException();
 		this.speedLimit = speedLimit;
 		controller.setSpeedLimit(speedLimit);
 	}
