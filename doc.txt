@@ -1,5 +1,1 @@
-A Readme.md fájlban készítettünk egy Additional notes című alpontot, hozzáadtunk egy linket, valamint egy listát.
-Létrehoztunk egy issue-t, hogy a speedLimit változó megváltoztatható legyen. Ehhez létrehoztunk egy speedLimit_setter branchet.
-A gradle build után minden mappában megjelent egy build mappa, amelybe a lefordított .class és .jar fájlok kerültek.
-A gradlew test futtatása BUILD SUCCESSFUL eredménnyel zárult.
-A TrainSensorImpl osztályban InvalidParameterException-t dobunk, ha 0-nál kisebb speedLimitet akarnak beállítani.
+https://docs.google.com/document/d/1jlD5PBRzwx7GRaFAbKC9EpyX_n35muFgI8-Ff_jpMHU/edit?usp=sharing
