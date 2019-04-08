@@ -7,13 +7,15 @@ import static org.mockito.Mockito.*;
 
 public class TrainSensorTest {
 
+
     @Before
     public void before() {
-
+      TrainController trainController = mock(TrainController.class);
+      TrainUser trainUser = mock(TrainUser.class);
     }
 
     @Test
-    public void ThisIsAnExampleTestStub() {
-        // TODO Delete this and add test cases based on the issues
+    public void negativeSpeedLimit() {
+      when(trainController.setSpeedLimit(-5)).verify(trainUser).setAlarmState("called")
     }
 }
