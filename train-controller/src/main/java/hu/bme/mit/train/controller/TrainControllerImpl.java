@@ -18,11 +18,11 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
-	private Timer t;
+	private Timer timer;
 
 	public TrainControllerImpl(){
-		t = new Timer();
-		t.schedule(new SpeedUpdate(this),1000);
+		timer = new Timer();
+		timer.schedule(new SpeedUpdate(this),1000);
 	}
 
 	@Override
